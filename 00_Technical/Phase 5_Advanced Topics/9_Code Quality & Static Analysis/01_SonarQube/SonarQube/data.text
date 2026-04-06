@@ -1,0 +1,377 @@
+2025-11-23 21:19:33.335 | 2025.11.23 14:19:33 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2025-11-23 21:19:33.352 | 2025.11.23 14:19:33 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:{}]
+2025-11-23 21:19:33.378 | 2025.11.23 14:19:33 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[ELASTICSEARCH] from [/opt/sonarqube/elasticsearch]: /opt/java/openjdk/bin/java -Xms4m -Xmx64m -XX:+UseSerialGC -Dcli.name=server -Dcli.script=./bin/elasticsearch -Dcli.libs=lib/tools/server-cli -Des.path.home=/opt/sonarqube/elasticsearch -Des.path.conf=/opt/sonarqube/temp/conf/es -Des.distribution.type=tar -cp /opt/sonarqube/elasticsearch/lib/*:/opt/sonarqube/elasticsearch/lib/cli-launcher/* org.elasticsearch.launcher.CliToolLauncher
+2025-11-23 21:19:33.385 | 2025.11.23 14:19:33 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2025-11-23 21:19:33.392 | Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-11-23 21:19:34.104 | Nov 23, 2025 2:19:34 PM sun.util.locale.provider.LocaleProviderAdapter <clinit>
+2025-11-23 21:19:34.104 | WARNING: COMPAT locale provider will be removed in a future release
+2025-11-23 21:19:34.217 | 2025.11.23 14:19:34 INFO  es[][o.e.n.j.JdkVectorLibrary] vec_caps=1
+2025-11-23 21:19:34.219 | 2025.11.23 14:19:34 INFO  es[][o.e.n.NativeAccess] Using native vector library; to disable start with -Dorg.elasticsearch.nativeaccess.enableVectorLibrary=false
+2025-11-23 21:19:34.223 | 2025.11.23 14:19:34 INFO  es[][o.e.n.NativeAccess] Using [jdk] native provider and native methods for [Linux]
+2025-11-23 21:19:34.242 | 2025.11.23 14:19:34 WARN  es[][o.a.l.i.v.VectorizationProvider] Java vector incubator module is not readable. For optimal vector performance, pass --add-modules jdk.incubator.vector to enable Vector API.
+2025-11-23 21:19:34.442 | 2025.11.23 14:19:34 INFO  es[][o.e.n.Node] version[8.16.6], pid[125], build[tar/2eabb32aee47ed0c4ba71c169f098d0379402efe/2025-03-20T10:07:27.754027795Z], OS[Linux/6.12.54-linuxkit/aarch64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/21.0.9/21.0.9+10-LTS]
+2025-11-23 21:19:34.442 | 2025.11.23 14:19:34 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk], using bundled JDK [false]
+2025-11-23 21:19:34.442 | 2025.11.23 14:19:34 INFO  es[][o.e.n.Node] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --enable-native-access=org.elasticsearch.nativeaccess,org.apache.lucene.core, -XX:ReplayDataFile=logs/replay_pid%p.log, -Des.distribution.type=tar, -XX:+UseG1GC, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=/opt/sonarqube/logs/es_hs_err_pid%p.log, -Xlog:disable, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djna.tmpdir=/opt/sonarqube/temp, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, --module-path=/opt/sonarqube/elasticsearch/lib, --add-modules=jdk.net, --add-modules=ALL-MODULE-PATH, -Djdk.module.main=org.elasticsearch.server]
+2025-11-23 21:19:34.442 | 2025.11.23 14:19:34 INFO  es[][o.e.n.Node] Default Locale [en_US]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [rest-root]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-core]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-redact]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-security]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-geoip-enterprise-downloader]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-esql-core]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-apm-data]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [old-lucene-versions]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2025-11-23 21:19:34.835 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [counted-keyword]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [logsdb]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-inference]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [health-shards-availability]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [dot-prefix-validation]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-otel-data]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [aggregations]
+2025-11-23 21:19:34.836 | 2025.11.23 14:19:34 INFO  es[][o.e.p.PluginsService] loaded module [apm]
+2025-11-23 21:19:35.207 | 2025.11.23 14:19:35 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/vda1)]], net usable_space [851.9gb], net total_space [910.7gb], types [ext4]
+2025-11-23 21:19:35.207 | 2025.11.23 14:19:35 INFO  es[][o.e.e.NodeEnvironment] heap size [512mb], compressed ordinary object pointers [true]
+2025-11-23 21:19:35.211 | 2025.11.23 14:19:35 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SIi8DH2RRWKGdfY3phUkVw], cluster name [sonarqube], roles [data_hot, ml, data_frozen, ingest, data_cold, data, remote_cluster_client, master, data_warm, data_content, transform]
+2025-11-23 21:19:35.913 | 2025.11.23 14:19:35 INFO  es[][o.e.i.r.RecoverySettings] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+2025-11-23 21:19:35.957 | 2025.11.23 14:19:35 INFO  es[][o.e.f.FeatureService] Registered local node features [desired_node.version_deprecated, features_supported, file_settings, flattened.ignore_above_support, geoip.downloader.database.configuration, get_database_configuration_action.multi_node, health.extended_repository_indicator, knn_retriever_supported, license-trial-independent-version, mapper.boolean_dimension, mapper.flattened.ignore_above_with_arrays_support, mapper.ignore_above_index_level_setting, mapper.index_sorting_on_nested, mapper.keyword_dimension_ignore_above, mapper.keyword_normalizer_synthetic_source, mapper.pass_through_priority, mapper.query_index_mode, mapper.range.null_values_off_by_one_fix, mapper.segment_level_fields_stats, mapper.source.synthetic_source_copy_to_fix, mapper.source.synthetic_source_copy_to_inside_objects_fix, mapper.source.synthetic_source_fallback, mapper.source.synthetic_source_stored_fields_advance_fix, mapper.source.synthetic_source_with_copy_to_and_doc_values_false, mapper.subobjects_auto, mapper.subobjects_auto_fixes, mapper.synthetic_source_keep, mapper.track_ignored_source, mapper.vectors.bbq, mapper.vectors.bit_vectors, mapper.vectors.int4_quantization, put_database_configuration_action.ipinfo, random_reranker_retriever_supported, repositories.supports_usage_stats, rest.capabilities_action, rest.local_only_capabilities, retrievers_supported, routing.boolean_routing_path, routing.multi_value_routing_path, script.hamming, script.term_stats, search.vectors.k_param_supported, security.migration_framework, security.role_mapping_cleanup, security.roles_metadata_flattened, semantic_text.search_inference_id, simulate.component.template.substitutions, simulate.index.template.substitutions, simulate.mapping.validation, simulate.mapping.validation.templates, standard_retriever_supported, stats.include_disk_thresholds, text_similarity_reranker_retriever_composition_supported, text_similarity_reranker_retriever_supported, tsdb.ts_routing_hash_doc_value_parse_byte_ref, unified_highlighter_matched_fields, usage.data_tiers.precalculate_stats]
+2025-11-23 21:19:35.966 | 2025.11.23 14:19:35 INFO  es[][o.e.c.m.DataStreamGlobalRetentionSettings] Updated default factory retention to [null]
+2025-11-23 21:19:35.966 | 2025.11.23 14:19:35 INFO  es[][o.e.c.m.DataStreamGlobalRetentionSettings] Updated max factory retention to [null]
+2025-11-23 21:19:36.031 | 2025.11.23 14:19:36 INFO  es[][o.e.x.s.Security] Security is disabled
+2025-11-23 21:19:36.031 | 2025.11.23 14:19:36 INFO  es[][o.e.x.a.APMPlugin] APM ingest plugin is enabled
+2025-11-23 21:19:36.074 | 2025.11.23 14:19:36 INFO  es[][o.e.x.c.t.YamlTemplateRegistry] apm index template registry is enabled
+2025-11-23 21:19:36.117 | 2025.11.23 14:19:36 INFO  es[][o.e.x.o.OTelPlugin] OTel ingest plugin is enabled
+2025-11-23 21:19:36.125 | 2025.11.23 14:19:36 INFO  es[][o.e.x.c.t.YamlTemplateRegistry] OpenTelemetry index template registry is enabled
+2025-11-23 21:19:36.126 | 2025.11.23 14:19:36 INFO  es[][o.e.t.a.APM] Sending apm metrics is disabled
+2025-11-23 21:19:36.126 | 2025.11.23 14:19:36 INFO  es[][o.e.t.a.APM] Sending apm tracing is disabled
+2025-11-23 21:19:36.214 | 2025.11.23 14:19:36 INFO  es[][o.e.t.n.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+2025-11-23 21:19:36.238 | 2025.11.23 14:19:36 INFO  es[][o.e.d.DiscoveryModule] using discovery type [single-node] and seed hosts providers [settings]
+2025-11-23 21:19:36.420 | 2025.11.23 14:19:36 INFO  es[][o.e.n.Node] initialized
+2025-11-23 21:19:36.420 | 2025.11.23 14:19:36 INFO  es[][o.e.n.Node] starting ...
+2025-11-23 21:19:36.451 | 2025.11.23 14:19:36 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:37897}, bound_addresses {127.0.0.1:37897}
+2025-11-23 21:19:36.499 | 2025.11.23 14:19:36 INFO  es[][o.e.c.c.ClusterBootstrapService] this node has not joined a bootstrapped cluster yet; [cluster.initial_master_nodes] is set to [sonarqube]
+2025-11-23 21:19:36.501 | 2025.11.23 14:19:36 INFO  es[][o.e.c.c.Coordinator] setting initial configuration to VotingConfiguration{SIi8DH2RRWKGdfY3phUkVw}
+2025-11-23 21:19:36.607 | 2025.11.23 14:19:36 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined in term 1)[_FINISH_ELECTION_, {sonarqube}{SIi8DH2RRWKGdfY3phUkVw}{0H1kFOmkRpiNIHO7ORRELg}{sonarqube}{127.0.0.1}{127.0.0.1:37897}{cdfhilmrstw}{8.16.6}{7000099-8518000} completing election], term: 1, version: 1, delta: master node changed {previous [], current [{sonarqube}{SIi8DH2RRWKGdfY3phUkVw}{0H1kFOmkRpiNIHO7ORRELg}{sonarqube}{127.0.0.1}{127.0.0.1:37897}{cdfhilmrstw}{8.16.6}{7000099-8518000}]}
+2025-11-23 21:19:36.616 | 2025.11.23 14:19:36 INFO  es[][o.e.c.c.CoordinationState] cluster UUID set to [KCinluS7SQOo5kk5cxFNhw]
+2025-11-23 21:19:36.622 | 2025.11.23 14:19:36 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{SIi8DH2RRWKGdfY3phUkVw}{0H1kFOmkRpiNIHO7ORRELg}{sonarqube}{127.0.0.1}{127.0.0.1:37897}{cdfhilmrstw}{8.16.6}{7000099-8518000}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+2025-11-23 21:19:36.631 | 2025.11.23 14:19:36 INFO  es[][o.e.c.c.NodeJoinExecutor] node-join: [{sonarqube}{SIi8DH2RRWKGdfY3phUkVw}{0H1kFOmkRpiNIHO7ORRELg}{sonarqube}{127.0.0.1}{127.0.0.1:37897}{cdfhilmrstw}{8.16.6}{7000099-8518000}] with reason [completing election]
+2025-11-23 21:19:36.632 | 2025.11.23 14:19:36 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2025-11-23 21:19:36.637 | 2025.11.23 14:19:36 INFO  es[][o.e.n.Node] started {sonarqube}{SIi8DH2RRWKGdfY3phUkVw}{0H1kFOmkRpiNIHO7ORRELg}{sonarqube}{127.0.0.1}{127.0.0.1:37897}{cdfhilmrstw}{8.16.6}{7000099-8518000}{rack_id=sonarqube, xpack.installed=true}
+2025-11-23 21:19:36.639 | 2025.11.23 14:19:36 INFO  es[][o.e.c.f.AbstractFileWatchingService] starting file watcher ...
+2025-11-23 21:19:36.641 | 2025.11.23 14:19:36 INFO  es[][o.e.c.f.AbstractFileWatchingService] file settings service up and running [tid=54]
+2025-11-23 21:19:36.641 | 2025.11.23 14:19:36 INFO  es[][o.e.r.s.FileSettingsService] setting file [/opt/sonarqube/temp/conf/es/operator/settings.json] not found, initializing [file_settings] as empty
+2025-11-23 21:19:36.641 | 2025.11.23 14:19:36 INFO  es[][o.e.g.GatewayService] recovered [0] indices into cluster_state
+2025-11-23 21:19:36.661 | 2025.11.23 14:19:36 INFO  es[][o.e.h.n.s.HealthNodeTaskExecutor] Node [{sonarqube}{SIi8DH2RRWKGdfY3phUkVw}] is selected as the current health node.
+2025-11-23 21:19:36.697 | 2025.11.23 14:19:36 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2025-11-23 21:19:36.699 | 2025.11.23 14:19:36 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[WEB_SERVER] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-25.11.0.114957.jar:/opt/sonarqube/lib/jdbc/h2/h2-2.3.232.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process15094341698581289857properties
+2025-11-23 21:19:36.701 | 2025.11.23 14:19:36 INFO  es[][o.e.l.ClusterStateLicenseService] license [f02a7889-5aa3-43f4-b62f-01c177d08a86] mode [basic] - valid
+2025-11-23 21:19:36.826 | 2025.11.23 14:19:36 INFO  web[][o.s.p.ProcessEntryPoint] Starting Web Server
+2025-11-23 21:19:36.860 | 2025.11.23 14:19:36 INFO  web[][o.s.s.a.TomcatHttpConnectorFactory] Starting Tomcat on port 9000
+2025-11-23 21:19:37.033 | Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-11-23 21:19:37.151 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 25.11.0.114957 / 76e03956ede5dbe63371bd7540d8b9af2ed73e44
+2025-11-23 21:19:37.220 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2025-11-23 21:19:37.234 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /opt/sonarqube/data
+2025-11-23 21:19:37.237 | 2025.11.23 14:19:37 INFO  web[][o.s.d.DefaultDatabase] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2025-11-23 21:19:37.242 | 2025.11.23 14:19:37 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
+2025-11-23 21:19:37.259 | 2025.11.23 14:19:37 INFO  web[][c.z.h.p.HikariPool] HikariPool-1 - Added connection conn2: url=jdbc:h2:tcp://127.0.0.1:9092/sonar user=
+2025-11-23 21:19:37.259 | 2025.11.23 14:19:37 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
+2025-11-23 21:19:37.261 | 2025.11.23 14:19:37 WARN  web[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2025-11-23 21:19:37.530 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2025-11-23 21:19:37.531 | 2025.11.23 14:19:37 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+2025-11-23 21:19:37.568 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.d.m.h.MigrationHistoryTableImpl] Creating table schema_migrations
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy C# Code Quality and Security / 10.15.0.120848 / 89326728cf637c9935206b2fa0b4b1dea083bda0
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Clean as You Code / 2.5.0.2588 / 72d253149f1ca83cbb9d63384c86fa081d24aafc
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Flex Code Quality and Security / 2.14.0.5032 / 005476cddc54a18b78eca55d10338702eb31e4b0
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Go Code Quality and Security / 1.29.0.4759 / a9e3d01b317d875cd346cceca65ea3399da67182
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy HTML Code Quality and Security / 3.20.0.6289 / 16c60208ce89cead036dd685cc6106e427df6302
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy IaC Code Quality and Security / 1.51.0.16714 / null
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy JaCoCo / 1.3.0.1538 / 74a7798c7cea687c72ed9df40c93eb7ea2a58c49
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Java Advanced Code Quality Analyzer / 8.16.1.344 / 3a7e6c6f52cf8c5793d9e92d92413c4193657c26
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Java Code Quality and Security / 8.20.0.40630 / 30e66d70e404296105c728023cc6957f7e1c5c83
+2025-11-23 21:19:37.609 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy JavaScript/TypeScript/CSS Code Quality and Security / 11.5.0.35357 / cae0ca71fdbf1e5288e05222ab0206fdbf27068b
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Kotlin Code Quality and Security / 3.3.0.7402 / 1beb40c315e3605c44594e752121a0ff123d2a7d
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy PHP Code Quality and Security / 3.51.0.15001 / null
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Python Code Quality and Security / 5.12.0.26629 / 63f999e057b90323a198220bca866997fa8a7293
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Ruby Code Quality and Security / 1.19.0.471 / 415d28ce6fa5adf005ce5eef827cec15af9c14cf
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Rust Code Quality and Security / 1.1.0.1088 / null
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Scala Code Quality and Security / 1.19.0.484 / 97a215c0534ecba8b6bc3e32c2589cbd86452170
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Swift (Backelite) / 0.4.6 / null
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Text Code Quality and Security / 2.31.0.8443 / null
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy VB.NET Code Quality and Security / 10.15.0.120848 / 89326728cf637c9935206b2fa0b4b1dea083bda0
+2025-11-23 21:19:37.610 | 2025.11.23 14:19:37 INFO  web[][o.s.s.p.ServerPluginManager] Deploy XML Code Quality and Security / 2.13.0.5938 / 18b3322855f8543906e10b25f9c57d2f81276c76
+2025-11-23 21:19:38.195 | 2025.11.23 14:19:38 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2025-11-23 21:19:38.298 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.AutoDbMigration] Automatically perform DB migration on fresh install
+2025-11-23 21:19:38.309 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] Executing 106 DB migrations...
+2025-11-23 21:19:38.310 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 1/106 #1 'Create initial schema'...
+2025-11-23 21:19:38.417 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 1/106 #1 'Create initial schema': success | time=108ms
+2025-11-23 21:19:38.418 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 2/106 #2 'Populate initial schema'...
+2025-11-23 21:19:38.437 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 2/106 #2 'Populate initial schema': success | time=19ms
+2025-11-23 21:19:38.437 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 3/106 #202501000 'Rename 'sonar.portfolios.confidential.header' property to 'sonar.pdf.confidential.header.enabled''...
+2025-11-23 21:19:38.439 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 3/106 #202501000 'Rename 'sonar.portfolios.confidential.header' property to 'sonar.pdf.confidential.header.enabled'': success | time=2ms
+2025-11-23 21:19:38.440 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 4/106 #202501001 'Delete removed complexity measures from 'project_measures' table'...
+2025-11-23 21:19:38.442 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.443 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 4/106 #202501001 'Delete removed complexity measures from 'project_measures' table': success | time=3ms
+2025-11-23 21:19:38.443 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 5/106 #202501002 'Delete removed complexity metrics from 'metrics' table'...
+2025-11-23 21:19:38.445 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 5/106 #202501002 'Delete removed complexity metrics from 'metrics' table': success | time=2ms
+2025-11-23 21:19:38.445 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 6/106 #202501003 'Create index on 'rule_tags' table'...
+2025-11-23 21:19:38.447 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 6/106 #202501003 'Create index on 'rule_tags' table': success | time=2ms
+2025-11-23 21:19:38.447 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 7/106 #202501004 'Rename 'Sonar Way' without 0 new issues condition to 'Sonar Way(legacy)''...
+2025-11-23 21:19:38.449 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 7/106 #202501004 'Rename 'Sonar Way' without 0 new issues condition to 'Sonar Way(legacy)'': success | time=2ms
+2025-11-23 21:19:38.449 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 8/106 #202501005 'Create 'user_ai_tool_usages' table'...
+2025-11-23 21:19:38.450 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 8/106 #202501005 'Create 'user_ai_tool_usages' table': success | time=1ms
+2025-11-23 21:19:38.451 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 9/106 #202501006 'Add 'detected_ai_code' column to 'projects' table'...
+2025-11-23 21:19:38.456 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 9/106 #202501006 'Add 'detected_ai_code' column to 'projects' table': success | time=4ms
+2025-11-23 21:19:38.456 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 10/106 #202501007 'Create table 'migration_logs''...
+2025-11-23 21:19:38.457 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 10/106 #202501007 'Create table 'migration_logs'': success | time=1ms
+2025-11-23 21:19:38.457 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 11/106 #202501008 'Log message if SAML configuration is not valid'...
+2025-11-23 21:19:38.459 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 11/106 #202501008 'Log message if SAML configuration is not valid': success | time=2ms
+2025-11-23 21:19:38.459 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 12/106 #202501009 'Add 'inline_annotations_enabled' column to 'project_alm_settings' table'...
+2025-11-23 21:19:38.461 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 12/106 #202501009 'Add 'inline_annotations_enabled' column to 'project_alm_settings' table': success | time=2ms
+2025-11-23 21:19:38.461 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 13/106 #202501010 'Populate 'inline_annotations_enabled' column for Azure'...
+2025-11-23 21:19:38.463 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.463 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 13/106 #202501010 'Populate 'inline_annotations_enabled' column for Azure': success | time=2ms
+2025-11-23 21:19:38.464 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 14/106 #202501011 'Update default admin password if still hashed with BCRYPT'...
+2025-11-23 21:19:38.465 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 14/106 #202501011 'Update default admin password if still hashed with BCRYPT': success | time=1ms
+2025-11-23 21:19:38.465 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 15/106 #202501012 'Log message if users are still relying on BCRYPT hashed passwords'...
+2025-11-23 21:19:38.467 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 15/106 #202501012 'Log message if users are still relying on BCRYPT hashed passwords': success | time=1ms
+2025-11-23 21:19:38.467 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 16/106 #202502000 'Drop 'issues_dependency' table'...
+2025-11-23 21:19:38.470 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 16/106 #202502000 'Drop 'issues_dependency' table': success | time=3ms
+2025-11-23 21:19:38.470 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 17/106 #202502001 'Drop 'cve_cwe' table'...
+2025-11-23 21:19:38.471 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 17/106 #202502001 'Drop 'cve_cwe' table': success | time=1ms
+2025-11-23 21:19:38.471 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 18/106 #202502002 'Drop 'cves' table'...
+2025-11-23 21:19:38.472 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 18/106 #202502002 'Drop 'cves' table': success | time=1ms
+2025-11-23 21:19:38.473 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 19/106 #202502003 'Create table for SCA releases'...
+2025-11-23 21:19:38.474 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 19/106 #202502003 'Create table for SCA releases': success | time=1ms
+2025-11-23 21:19:38.474 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 20/106 #202502004 'Create index for SCA releases component'...
+2025-11-23 21:19:38.475 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 20/106 #202502004 'Create index for SCA releases component': success | time=1ms
+2025-11-23 21:19:38.476 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 21/106 #202502005 'Create table for SCA dependencies'...
+2025-11-23 21:19:38.477 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 21/106 #202502005 'Create table for SCA dependencies': success | time=2ms
+2025-11-23 21:19:38.477 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 22/106 #202502006 'Create index for SCA dependencies to releases'...
+2025-11-23 21:19:38.478 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 22/106 #202502006 'Create index for SCA dependencies to releases': success | time=1ms
+2025-11-23 21:19:38.478 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 23/106 #202502007 'Create table for SCA issues'...
+2025-11-23 21:19:38.480 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 23/106 #202502007 'Create table for SCA issues': success | time=1ms
+2025-11-23 21:19:38.480 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 24/106 #202502008 'Create unique index on SCA issues'...
+2025-11-23 21:19:38.481 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 24/106 #202502008 'Create unique index on SCA issues': success | time=1ms
+2025-11-23 21:19:38.481 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 25/106 #202502009 'Create table for vulnerability subtype of SCA issues'...
+2025-11-23 21:19:38.482 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 25/106 #202502009 'Create table for vulnerability subtype of SCA issues': success | time=1ms
+2025-11-23 21:19:38.483 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 26/106 #202502010 'Create table for SCA issues to releases'...
+2025-11-23 21:19:38.484 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 26/106 #202502010 'Create table for SCA issues to releases': success | time=1ms
+2025-11-23 21:19:38.484 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 27/106 #202502011 'Create index for SCA issues to releases to SCA issues'...
+2025-11-23 21:19:38.485 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 27/106 #202502011 'Create index for SCA issues to releases to SCA issues': success | time=1ms
+2025-11-23 21:19:38.485 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 28/106 #202502012 'Create index for SCA issues to releases to SCA releases'...
+2025-11-23 21:19:38.486 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 28/106 #202502012 'Create index for SCA issues to releases to SCA releases': success | time=1ms
+2025-11-23 21:19:38.486 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 29/106 #202502013 'Create unique index for SCA issues to releases'...
+2025-11-23 21:19:38.487 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 29/106 #202502013 'Create unique index for SCA issues to releases': success | time=1ms
+2025-11-23 21:19:38.487 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 30/106 #202502014 'Add new_in_pull_request column to SCA releases'...
+2025-11-23 21:19:38.490 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 30/106 #202502014 'Add new_in_pull_request column to SCA releases': success | time=3ms
+2025-11-23 21:19:38.490 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 31/106 #202502015 'Add new_in_pull_request column to SCA dependencies'...
+2025-11-23 21:19:38.492 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 31/106 #202502015 'Add new_in_pull_request column to SCA dependencies': success | time=2ms
+2025-11-23 21:19:38.492 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 32/106 #202502016 'Insert default AI Codefix provider key and modelKey properties'...
+2025-11-23 21:19:38.494 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 32/106 #202502016 'Insert default AI Codefix provider key and modelKey properties': success | time=2ms
+2025-11-23 21:19:38.494 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 33/106 #202502017 'Add table 'architecture_graphs''...
+2025-11-23 21:19:38.495 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 33/106 #202502017 'Add table 'architecture_graphs'': success | time=1ms
+2025-11-23 21:19:38.496 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 34/106 #202502018 'Drop 'sca_releases_comp_uuid' index'...
+2025-11-23 21:19:38.497 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 34/106 #202502018 'Drop 'sca_releases_comp_uuid' index': success | time=1ms
+2025-11-23 21:19:38.497 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 35/106 #202502019 'Create 'sca_releases_comp_uuid_uuid' index'...
+2025-11-23 21:19:38.498 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 35/106 #202502019 'Create 'sca_releases_comp_uuid_uuid' index': success | time=1ms
+2025-11-23 21:19:38.498 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 36/106 #202502020 'Add 'sca_dependencies.production_scope' column'...
+2025-11-23 21:19:38.500 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 36/106 #202502020 'Add 'sca_dependencies.production_scope' column': success | time=2ms
+2025-11-23 21:19:38.500 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 37/106 #202502021 'Add declared_license_expression to SCA releases'...
+2025-11-23 21:19:38.502 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 37/106 #202502021 'Add declared_license_expression to SCA releases': success | time=2ms
+2025-11-23 21:19:38.503 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 38/106 #202502022 'Create 'uq_idx_ag_branch_type_source' for architecture graphs'...
+2025-11-23 21:19:38.504 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 38/106 #202502022 'Create 'uq_idx_ag_branch_type_source' for architecture graphs': success | time=2ms
+2025-11-23 21:19:38.505 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 39/106 #202503000 'Add known_package column to SCA releases'...
+2025-11-23 21:19:38.507 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 39/106 #202503000 'Add known_package column to SCA releases': success | time=1ms
+2025-11-23 21:19:38.507 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 40/106 #202503001 'Populate known_package column to SCA releases'...
+2025-11-23 21:19:38.508 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.508 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 40/106 #202503001 'Populate known_package column to SCA releases': success | time=1ms
+2025-11-23 21:19:38.509 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 41/106 #202503002 'Update known_package on SCA release to be not nullable'...
+2025-11-23 21:19:38.511 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 41/106 #202503002 'Update known_package on SCA release to be not nullable': success | time=2ms
+2025-11-23 21:19:38.511 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 42/106 #202503003 'Add status column to SCA issues releases join table'...
+2025-11-23 21:19:38.513 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 42/106 #202503003 'Add status column to SCA issues releases join table': success | time=2ms
+2025-11-23 21:19:38.514 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 43/106 #202503004 'Populate status column to SCA issues releases join table'...
+2025-11-23 21:19:38.514 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.515 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 43/106 #202503004 'Populate status column to SCA issues releases join table': success | time=2ms
+2025-11-23 21:19:38.515 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 44/106 #202503005 'Update status column on SCA issues releases join table to be not nullable'...
+2025-11-23 21:19:38.517 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 44/106 #202503005 'Update status column on SCA issues releases join table to be not nullable': success | time=2ms
+2025-11-23 21:19:38.517 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 45/106 #202503006 'Add is_new column to SCA releases'...
+2025-11-23 21:19:38.519 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 45/106 #202503006 'Add is_new column to SCA releases': success | time=2ms
+2025-11-23 21:19:38.519 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 46/106 #202503007 'Add is_new column to SCA dependencies'...
+2025-11-23 21:19:38.521 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 46/106 #202503007 'Add is_new column to SCA dependencies': success | time=2ms
+2025-11-23 21:19:38.521 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 47/106 #202503008 'Migrate to is_new on SCA releases'...
+2025-11-23 21:19:38.522 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.523 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 47/106 #202503008 'Migrate to is_new on SCA releases': success | time=2ms
+2025-11-23 21:19:38.523 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 48/106 #202503009 'Migrate to is_new on SCA dependencies'...
+2025-11-23 21:19:38.524 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.525 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 48/106 #202503009 'Migrate to is_new on SCA dependencies': success | time=2ms
+2025-11-23 21:19:38.525 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 49/106 #202503010 'Drop new_in_pull_request column from SCA releases'...
+2025-11-23 21:19:38.527 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 49/106 #202503010 'Drop new_in_pull_request column from SCA releases': success | time=2ms
+2025-11-23 21:19:38.527 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 50/106 #202503011 'Drop new_in_pull_request column from SCA dependencies'...
+2025-11-23 21:19:38.529 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 50/106 #202503011 'Drop new_in_pull_request column from SCA dependencies': success | time=2ms
+2025-11-23 21:19:38.529 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 51/106 #202503012 'Add assignee to SCA issues releases'...
+2025-11-23 21:19:38.534 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 51/106 #202503012 'Add assignee to SCA issues releases': success | time=5ms
+2025-11-23 21:19:38.535 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 52/106 #202503013 'Create ScaIssuesReleasesHistory table'...
+2025-11-23 21:19:38.536 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 52/106 #202503013 'Create ScaIssuesReleasesHistory table': success | time=1ms
+2025-11-23 21:19:38.536 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 53/106 #202503014 'Create index for sca_issues_releases UUID on changes table'...
+2025-11-23 21:19:38.537 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 53/106 #202503014 'Create index for sca_issues_releases UUID on changes table': success | time=1ms
+2025-11-23 21:19:38.537 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 54/106 #202503015 'Update default SCA dependency issue status to OPEN from TO_REVIEW'...
+2025-11-23 21:19:38.539 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.539 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 54/106 #202503015 'Update default SCA dependency issue status to OPEN from TO_REVIEW': success | time=2ms
+2025-11-23 21:19:38.540 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 55/106 #202503016 'Create SCA license profiles table'...
+2025-11-23 21:19:38.541 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 55/106 #202503016 'Create SCA license profiles table': success | time=2ms
+2025-11-23 21:19:38.541 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 56/106 #202503017 'Create SCA license profiles projects join table'...
+2025-11-23 21:19:38.542 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 56/106 #202503017 'Create SCA license profiles projects join table': success | time=1ms
+2025-11-23 21:19:38.542 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 57/106 #202503018 'Create unique index on SCA license profiles projects join table'...
+2025-11-23 21:19:38.543 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 57/106 #202503018 'Create unique index on SCA license profiles projects join table': success | time=1ms
+2025-11-23 21:19:38.543 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 58/106 #202503019 'Create SCA license profile customizations table'...
+2025-11-23 21:19:38.545 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 58/106 #202503019 'Create SCA license profile customizations table': success | time=1ms
+2025-11-23 21:19:38.545 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 59/106 #202503020 'Create SCA license profile categories table'...
+2025-11-23 21:19:38.546 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 59/106 #202503020 'Create SCA license profile categories table': success | time=1ms
+2025-11-23 21:19:38.546 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 60/106 #202503021 'Create unique index on SCA license profile categories table'...
+2025-11-23 21:19:38.547 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 60/106 #202503021 'Create unique index on SCA license profile categories table': success | time=1ms
+2025-11-23 21:19:38.547 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 61/106 #202503022 'Create unique index on SCA license profile customizations table'...
+2025-11-23 21:19:38.548 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 61/106 #202503022 'Create unique index on SCA license profile customizations table': success | time=1ms
+2025-11-23 21:19:38.548 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 62/106 #202503023 'Create unique index on SCA license profiles table'...
+2025-11-23 21:19:38.549 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 62/106 #202503023 'Create unique index on SCA license profiles table': success | time=1ms
+2025-11-23 21:19:38.549 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 63/106 #202503024 'Create SCA encountered licenses table'...
+2025-11-23 21:19:38.550 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 63/106 #202503024 'Create SCA encountered licenses table': success | time=1ms
+2025-11-23 21:19:38.551 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 64/106 #202503025 'Create SCA encountered licenses unique index'...
+2025-11-23 21:19:38.551 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 64/106 #202503025 'Create SCA encountered licenses unique index': success | time=1ms
+2025-11-23 21:19:38.552 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 65/106 #202503026 'Add change_comment to SCA issues releases changes'...
+2025-11-23 21:19:38.553 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 65/106 #202503026 'Add change_comment to SCA issues releases changes': success | time=1ms
+2025-11-23 21:19:38.553 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 66/106 #202503027 'Drop change_type from SCA issues releases changes'...
+2025-11-23 21:19:38.555 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 66/106 #202503027 'Drop change_type from SCA issues releases changes': success | time=2ms
+2025-11-23 21:19:38.555 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 67/106 #202503028 'Remove duplicates from SCA releases table'...
+2025-11-23 21:19:38.558 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 67/106 #202503028 'Remove duplicates from SCA releases table': success | time=3ms
+2025-11-23 21:19:38.558 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 68/106 #202503029 'Create unique index on SCA releases table'...
+2025-11-23 21:19:38.559 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 68/106 #202503029 'Create unique index on SCA releases table': success | time=1ms
+2025-11-23 21:19:38.560 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 69/106 #202503030 'Create SCA analyses table'...
+2025-11-23 21:19:38.561 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 69/106 #202503030 'Create SCA analyses table': success | time=1ms
+2025-11-23 21:19:38.561 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 70/106 #202503031 'Create unique index on SCA analyses table'...
+2025-11-23 21:19:38.562 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 70/106 #202503031 'Create unique index on SCA analyses table': success | time=1ms
+2025-11-23 21:19:38.562 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 71/106 #202503032 'Add 'analysis_uuid' column to 'architecture_graphs' table'...
+2025-11-23 21:19:38.563 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 71/106 #202503032 'Add 'analysis_uuid' column to 'architecture_graphs' table': success | time=1ms
+2025-11-23 21:19:38.563 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 72/106 #202503033 'Add 'perspective_key' column to 'architecture_graphs' table'...
+2025-11-23 21:19:38.565 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 72/106 #202503033 'Add 'perspective_key' column to 'architecture_graphs' table': success | time=2ms
+2025-11-23 21:19:38.565 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 73/106 #202503034 'Drop unique index on 'architecture_graphs' table'...
+2025-11-23 21:19:38.566 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 73/106 #202503034 'Drop unique index on 'architecture_graphs' table': success | time=1ms
+2025-11-23 21:19:38.566 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 74/106 #202503035 'Rename column 'source' to 'ecosystem' on 'architecture_graphs' table'...
+2025-11-23 21:19:38.568 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 74/106 #202503035 'Rename column 'source' to 'ecosystem' on 'architecture_graphs' table': success | time=2ms
+2025-11-23 21:19:38.569 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 75/106 #202503036 'Create unique index on 'architecture_graphs' table'...
+2025-11-23 21:19:38.569 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 75/106 #202503036 'Create unique index on 'architecture_graphs' table': success | time=1ms
+2025-11-23 21:19:38.570 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 76/106 #202503037 'Add previous_manual_status to SCA issues releases'...
+2025-11-23 21:19:38.571 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 76/106 #202503037 'Add previous_manual_status to SCA issues releases': success | time=1ms
+2025-11-23 21:19:38.571 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 77/106 #202503038 'Add 'graph_version' column to 'architecture_graphs' table'...
+2025-11-23 21:19:38.573 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 77/106 #202503038 'Add 'graph_version' column to 'architecture_graphs' table': success | time=2ms
+2025-11-23 21:19:38.573 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 78/106 #202503039 'Add assignee name to SCA issues releases'...
+2025-11-23 21:19:38.576 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 78/106 #202503039 'Add assignee name to SCA issues releases': success | time=3ms
+2025-11-23 21:19:38.576 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 79/106 #202503040 'Drop assignee name from SCA issues releases'...
+2025-11-23 21:19:38.578 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 79/106 #202503040 'Drop assignee name from SCA issues releases': success | time=1ms
+2025-11-23 21:19:38.578 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 80/106 #202503041 'Remove AssigneeName from Sca issue release changes'...
+2025-11-23 21:19:38.579 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.580 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 80/106 #202503041 'Remove AssigneeName from Sca issue release changes': success | time=2ms
+2025-11-23 21:19:38.580 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 81/106 #202503042 'Remove non-canonical from Sca encountered licenses'...
+2025-11-23 21:19:38.581 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 81/106 #202503042 'Remove non-canonical from Sca encountered licenses': success | time=1ms
+2025-11-23 21:19:38.581 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 82/106 #202503043 'Add 'policy_updated_at' to Sca license profiles'...
+2025-11-23 21:19:38.582 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 82/106 #202503043 'Add 'policy_updated_at' to Sca license profiles': success | time=1ms
+2025-11-23 21:19:38.583 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 83/106 #202503044 'Populate 'policy_updated_at' column for Sca license profiles'...
+2025-11-23 21:19:38.584 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.584 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 83/106 #202503044 'Populate 'policy_updated_at' column for Sca license profiles': success | time=1ms
+2025-11-23 21:19:38.585 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 84/106 #202503045 'Update 'policy_updated_at' column for Sca license profiles to be not nullable'...
+2025-11-23 21:19:38.586 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 84/106 #202503045 'Update 'policy_updated_at' column for Sca license profiles to be not nullable': success | time=2ms
+2025-11-23 21:19:38.586 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 85/106 #202504000 'Add 'withdrawn' column to 'sca_vulnerability_issues' table'...
+2025-11-23 21:19:38.588 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 85/106 #202504000 'Add 'withdrawn' column to 'sca_vulnerability_issues' table': success | time=2ms
+2025-11-23 21:19:38.588 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 86/106 #202504001 'Add 'organization_uuid' column to 'sca_license_profiles' table'...
+2025-11-23 21:19:38.589 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 86/106 #202504001 'Add 'organization_uuid' column to 'sca_license_profiles' table': success | time=1ms
+2025-11-23 21:19:38.590 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 87/106 #202504002 'Drop unique index from 'sca_license_profiles''...
+2025-11-23 21:19:38.591 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 87/106 #202504002 'Drop unique index from 'sca_license_profiles'': success | time=0ms
+2025-11-23 21:19:38.591 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 88/106 #202504003 'Create unique index from 'sca_license_profiles''...
+2025-11-23 21:19:38.592 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 88/106 #202504003 'Create unique index from 'sca_license_profiles'': success | time=1ms
+2025-11-23 21:19:38.592 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 89/106 #202504004 'Add index on 'alm_repo' column in 'project_alm_settings' table'...
+2025-11-23 21:19:38.593 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 89/106 #202504004 'Add index on 'alm_repo' column in 'project_alm_settings' table': success | time=1ms
+2025-11-23 21:19:38.593 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 90/106 #202504005 'Add 'original_severity' and 'manual_severity' columns to 'sca_issues_releases' table'...
+2025-11-23 21:19:38.596 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 90/106 #202504005 'Add 'original_severity' and 'manual_severity' columns to 'sca_issues_releases' table': success | time=2ms
+2025-11-23 21:19:38.596 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 91/106 #202504006 'Populate 'original_severity' column for 'sca_issues_releases' table'...
+2025-11-23 21:19:38.596 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.d.m.s.MassUpdate] 0 rows processed (0 items/sec)
+2025-11-23 21:19:38.597 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 91/106 #202504006 'Populate 'original_severity' column for 'sca_issues_releases' table': success | time=1ms
+2025-11-23 21:19:38.597 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 92/106 #202504007 'Update 'original_severity' column to be not nullable in 'sca_issues_releases' table'...
+2025-11-23 21:19:38.599 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 92/106 #202504007 'Update 'original_severity' column to be not nullable in 'sca_issues_releases' table': success | time=2ms
+2025-11-23 21:19:38.599 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 93/106 #202504008 'Update size of 'name' column in 'rules' table'...
+2025-11-23 21:19:38.600 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 93/106 #202504008 'Update size of 'name' column in 'rules' table': success | time=1ms
+2025-11-23 21:19:38.600 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 94/106 #202504009 'Add 'show_increased_severity_warning' column to 'sca_issues_releases' table'...
+2025-11-23 21:19:38.602 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 94/106 #202504009 'Add 'show_increased_severity_warning' column to 'sca_issues_releases' table': success | time=1ms
+2025-11-23 21:19:38.602 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 95/106 #202504010 'Add 'analysis_parameters' column to 'sca_analyses' table'...
+2025-11-23 21:19:38.603 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 95/106 #202504010 'Add 'analysis_parameters' column to 'sca_analyses' table': success | time=1ms
+2025-11-23 21:19:38.603 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 96/106 #202505000 'Add 'published_on' column to 'sca_vulnerability_issues' table'...
+2025-11-23 21:19:38.604 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 96/106 #202505000 'Add 'published_on' column to 'sca_vulnerability_issues' table': success | time=1ms
+2025-11-23 21:19:38.604 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 97/106 #202505001 'Add 'from_sonarqube_update' column to 'issues' table'...
+2025-11-23 21:19:38.606 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 97/106 #202505001 'Add 'from_sonarqube_update' column to 'issues' table': success | time=2ms
+2025-11-23 21:19:38.607 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 98/106 #202505002 'Add 'internal_tags' column to 'issues' table'...
+2025-11-23 21:19:38.608 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 98/106 #202505002 'Add 'internal_tags' column to 'issues' table': success | time=2ms
+2025-11-23 21:19:38.608 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 99/106 #202506000 'Create 'jira_project_bindings' table'...
+2025-11-23 21:19:38.609 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 99/106 #202506000 'Create 'jira_project_bindings' table': success | time=1ms
+2025-11-23 21:19:38.610 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 100/106 #202506001 'Create 'atlassian_auth_details' table'...
+2025-11-23 21:19:38.611 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 100/106 #202506001 'Create 'atlassian_auth_details' table': success | time=1ms
+2025-11-23 21:19:38.611 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 101/106 #202506002 'Create 'xsrf_tokens' table'...
+2025-11-23 21:19:38.612 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 101/106 #202506002 'Create 'xsrf_tokens' table': success | time=1ms
+2025-11-23 21:19:38.612 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 102/106 #202506003 'Create 'jira_org_bindings' table'...
+2025-11-23 21:19:38.613 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 102/106 #202506003 'Create 'jira_org_bindings' table': success | time=1ms
+2025-11-23 21:19:38.613 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 103/106 #202506004 'Create 'jira_org_bindings_pending' table'...
+2025-11-23 21:19:38.614 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 103/106 #202506004 'Create 'jira_org_bindings_pending' table': success | time=1ms
+2025-11-23 21:19:38.614 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 104/106 #202506005 'Create 'jira_selected_work_types' table'...
+2025-11-23 21:19:38.615 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 104/106 #202506005 'Create 'jira_selected_work_types' table': success | time=1ms
+2025-11-23 21:19:38.615 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 105/106 #202506006 'Create 'jira_work_items' table'...
+2025-11-23 21:19:38.616 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 105/106 #202506006 'Create 'jira_work_items' table': success | time=1ms
+2025-11-23 21:19:38.617 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 106/106 #202506007 'Create 'jira_work_items_linked_resources' table'...
+2025-11-23 21:19:38.617 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] 106/106 #202506007 'Create 'jira_work_items_linked_resources' table': success | time=1ms
+2025-11-23 21:19:38.617 | 2025.11.23 14:19:38 INFO  web[][DbMigrations] Executed 106/106 DB migrations: success | time=309ms
+2025-11-23 21:19:38.628 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.Platform] Database has been automatically updated
+2025-11-23 21:19:38.634 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@9c0d0bd [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+2025-11-23 21:19:38.634 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.NoCacheFilter@13cc31ae [pattern=UrlPattern{inclusions=[/api/v2/*], exclusions=[]}]
+2025-11-23 21:19:38.647 | 2025.11.23 14:19:38 INFO  web[][o.s.s.p.DetectPluginChange] Detect plugin changes
+2025-11-23 21:19:38.661 | 2025.11.23 14:19:38 INFO  web[][o.s.s.s.PropertiesDBCleaner] Clean up properties from db
+2025-11-23 21:19:38.795 | 2025.11.23 14:19:38 ERROR web[][o.s.s.p.Platform] Background initialization failed. Stopping SonarQube
+2025-11-23 21:19:38.795 | java.lang.IllegalStateException: Fail to load plugin Swift (Backelite) [backelitesonarswiftplugin]
+2025-11-23 21:19:38.795 | 	at org.sonar.server.plugins.ServerExtensionInstaller.installExtensions(ServerExtensionInstaller.java:81)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.platformlevel.PlatformLevel4.configureLevel(PlatformLevel4.java:769)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.platformlevel.PlatformLevel.configure(PlatformLevel.java:70)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.PlatformImpl.start(PlatformImpl.java:214)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.PlatformImpl.startLevel34Containers(PlatformImpl.java:197)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.PlatformImpl$AutoStarterRunnable.runIfNotAborted(PlatformImpl.java:365)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.PlatformImpl$1.doRun(PlatformImpl.java:116)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.platform.PlatformImpl$AutoStarterRunnable.run(PlatformImpl.java:349)
+2025-11-23 21:19:38.795 | 	at java.base/java.lang.Thread.run(Unknown Source)
+2025-11-23 21:19:38.795 | Caused by: java.lang.NoClassDefFoundError: org/sonar/api/profiles/ProfileImporter
+2025-11-23 21:19:38.795 | 	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+2025-11-23 21:19:38.795 | 	at java.base/java.lang.ClassLoader.defineClass(Unknown Source)
+2025-11-23 21:19:38.795 | 	at java.base/java.security.SecureClassLoader.defineClass(Unknown Source)
+2025-11-23 21:19:38.795 | 	at java.base/java.net.URLClassLoader.defineClass(Unknown Source)
+2025-11-23 21:19:38.795 | 	at java.base/java.net.URLClassLoader$1.run(Unknown Source)
+2025-11-23 21:19:38.795 | 	at java.base/java.net.URLClassLoader$1.run(Unknown Source)
+2025-11-23 21:19:38.795 | 	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+2025-11-23 21:19:38.795 | 	at java.base/java.net.URLClassLoader.findClass(Unknown Source)
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ClassRealm.loadClassFromSelf(ClassRealm.java:135)
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ParentFirstStrategy.loadClass(ParentFirstStrategy.java:37)
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ClassRealm.loadClass(ClassRealm.java:97)
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ClassRealm.loadClass(ClassRealm.java:86)
+2025-11-23 21:19:38.795 | 	at com.backelite.sonarqube.swift.SwiftPlugin.define(SwiftPlugin.java:112)
+2025-11-23 21:19:38.795 | 	at org.sonar.server.plugins.ServerExtensionInstaller.installExtensions(ServerExtensionInstaller.java:71)
+2025-11-23 21:19:38.795 | 	... 8 common frames omitted
+2025-11-23 21:19:38.795 | Caused by: java.lang.ClassNotFoundException: org.sonar.api.profiles.ProfileImporter
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ParentFirstStrategy.loadClass(ParentFirstStrategy.java:39)
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ClassRealm.loadClass(ClassRealm.java:97)
+2025-11-23 21:19:38.795 | 	at org.sonar.classloader.ClassRealm.loadClass(ClassRealm.java:86)
+2025-11-23 21:19:38.795 | 	... 22 common frames omitted
+2025-11-23 21:19:38.838 | 2025.11.23 14:19:38 INFO  web[][o.s.p.ProcessEntryPoint] Hard stopping process
+2025-11-23 21:19:39.001 | 2025.11.23 14:19:39 INFO  web[][o.h.v.i.util.Version] HV000001: Hibernate Validator 9.0.1.Final
+2025-11-23 21:19:39.082 | 2025.11.23 14:19:39 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-11-23 21:19:39.087 | 2025.11.23 14:19:39 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-11-23 21:19:39.087 | 2025.11.23 14:19:39 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2025-11-23 21:19:39.112 | 2025.11.23 14:19:39 INFO  app[][o.s.a.SchedulerImpl] Process[Web Server] is stopped
+2025-11-23 21:19:39.174 | 2025.11.23 14:19:39 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [ElasticSearch]: 143
+2025-11-23 21:19:39.174 | 2025.11.23 14:19:39 INFO  app[][o.s.a.SchedulerImpl] Process[ElasticSearch] is stopped
+2025-11-23 21:19:39.174 | 2025.11.23 14:19:39 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped

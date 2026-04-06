@@ -1,0 +1,31 @@
+# Line Length
+--maxwidth 120
+--wraparguments before-first
+--wrapcollections before-first
+
+# Indentation
+--indent 4
+--indentcase true
+
+# Spacing Rules
+--ranges spaced
+--commas always
+--semicolons never
+--trimwhitespace always
+
+# Imports
+--importgrouping alphabetized
+
+# File Headers
+--header strip
+
+# Comments
+--stripunusedargs closure-only
+
+# Rules
+--enable andOperator
+--enable isEmpty
+--enable redundantSelf
+--enable preferKeyPath
+--enable hoistPatternLet
+--disable wrapMultilineStatementBraces

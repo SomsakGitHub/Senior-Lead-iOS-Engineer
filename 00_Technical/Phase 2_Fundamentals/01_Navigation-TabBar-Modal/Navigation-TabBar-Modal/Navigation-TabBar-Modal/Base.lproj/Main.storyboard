@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9dn-vo-mAO">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation_TabBar_Modal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QgZ-fj-9aP">
+                                <rect key="frame" x="104.33333333333333" y="172" width="184.33333333333337" height="161.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIg-eC-9Aq">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.33333333333334" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Navigation Controller"/>
+                                        <connections>
+                                            <segue destination="Ix9-2E-lGM" kind="push" id="tVA-jQ-VbL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMK-tY-yht">
+                                        <rect key="frame" x="0.0" y="40.333333333333343" width="184.33333333333334" height="40.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Tab Bar Controller"/>
+                                        <connections>
+                                            <segue destination="zMQ-r2-BkX" kind="push" id="joK-sC-sl5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRF-Rc-mSx">
+                                        <rect key="frame" x="0.0" y="80.666666666666657" width="184.33333333333334" height="40.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Modal Presentation"/>
+                                        <connections>
+                                            <segue destination="xde-ZB-XAt" kind="push" id="DGX-2D-mJg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-PH-ebm">
+                                        <rect key="frame" x="0.0" y="120.99999999999999" width="184.33333333333334" height="40.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="All"/>
+                                        <connections>
+                                            <action selector="mainViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1KQ-02-opt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QgZ-fj-9aP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3SC-GF-Ra9"/>
+                            <constraint firstItem="QgZ-fj-9aP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBz-aA-KdZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZdF-oa-e4x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="130.98591549295776"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="nJ6-EN-DJr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailViewController" id="Ix9-2E-lGM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hIp-aK-x8J"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSr-TZ-Z2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="15"/>
+        </scene>
+        <!--TabBarViewController-->
+        <scene sceneID="C6n-SZ-X7i">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBarViewController" id="zMQ-r2-BkX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kVu-4g-70w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4U-RU-fAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="90"/>
+        </scene>
+        <!--Modal-->
+        <scene sceneID="fQZ-Uq-uKu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Modal" id="xde-ZB-XAt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kp0-kO-omd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWA-Z3-d5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0w7-H0-xOk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9dn-vo-mAO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oTa-kG-AtE">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qQh-Dr-krA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLv-uD-rEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
