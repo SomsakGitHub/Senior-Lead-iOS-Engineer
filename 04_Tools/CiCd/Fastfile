@@ -1,0 +1,73 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build the app"
+  lane :build do
+    setup_ci
+
+    build_app(
+      workspace: nil,
+      project: "CiCd.xcodeproj",
+      scheme: "CiCd",
+      configuration: "Release",
+      clean: true,
+      output_directory: "./build",
+      output_name: "CiCd.ipa"
+    )
+  end
+
+  desc "Run unit and UI tests"
+  lane :test do
+    setup_ci
+
+    run_tests(
+      workspace: nil,
+      project: "CiCd.xcodeproj",
+      scheme: "CiCd",
+      devices: ["iPhone 16"],
+      code_coverage: true
+    )
+  end
+
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    setup_ci
+
+    build_app(
+      workspace: nil,
+      project: "CiCd.xcodeproj",
+      scheme: "CiCd",
+      configuration: "Release",
+      clean: true,
+      export_method: "app-store",
+      output_directory: "./build"
+    )
+
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+  end
+
+  desc "Build and upload to Firebase App Distribution"
+  lane :firebase do
+    setup_ci
+
+    build_app(
+      workspace: nil,
+      project: "CiCd.xcodeproj",
+      scheme: "CiCd",
+      configuration: "Release",
+      clean: true,
+      export_method: "development",
+      output_directory: "./build"
+    )
+
+    firebase_app_distribution(
+      app: "1:22484456992:ios:db878053c8a93b1ee10e45",
+      ipa_path: "./build/CiCd.ipa",
+      groups: ENV["FIREBASE_TESTERS_GROUP"],
+      firebase_cli_token: ENV["FIREBASE_TOKEN"],
+      release_notes: "Build #{ENV['BUILD_NUMBER'] || 'local'}"
+    )
+  end
+end
