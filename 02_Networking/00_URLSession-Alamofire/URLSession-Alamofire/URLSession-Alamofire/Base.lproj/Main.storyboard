@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="URLSession_Alamofire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pLJ-Tj-Rdg">
+                                <rect key="frame" x="139" y="365.66666666666669" width="115.33333333333331" height="121"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD0-ga-5ac">
+                                        <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="URLSession"/>
+                                        <connections>
+                                            <segue destination="Jdq-eW-m6w" kind="show" id="ohv-If-hiU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuW-4F-PGW" userLabel="Alamofire">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="115.33333333333333" height="40.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alamofire"/>
+                                        <connections>
+                                            <segue destination="bfG-bq-ZoG" kind="show" id="z9n-0h-Hv6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOw-2g-E6j">
+                                        <rect key="frame" x="0.0" y="80.666666666666629" width="115.33333333333333" height="40.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bonus"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pLJ-Tj-Rdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lVM-Ze-kVr"/>
+                            <constraint firstItem="pLJ-Tj-Rdg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rcW-Cx-jPI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="89"/>
+        </scene>
+        <!--URLSessionStoryboard-->
+        <scene sceneID="Cuj-n0-wh5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="URLSessionStoryboard" id="Jdq-eW-m6w" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="URE-9D-myD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zT0-qy-FuA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="32"/>
+        </scene>
+        <!--AlamofireStoryboard-->
+        <scene sceneID="0St-fv-gzq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AlamofireStoryboard" id="bfG-bq-ZoG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cM7-cN-YNI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6o-fe-cXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
